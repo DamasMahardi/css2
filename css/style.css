@@ -1,0 +1,86 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#border-top-custom {
+    border-top: 2px solid #8040D1;
+}
+
+
+#bg-contanerMain {
+    background-color: #ECEFF4;
+}
+
+#bg-containerInternal {
+    background-color: #FDFDFC;
+}
+
+#colorUpRigt {
+    background-color: #8040D1;
+}
+
+#colorUpRigtcard {
+    background-color: #C39CF5;
+}
+
+#colorDownRight {
+    background-color: #F3393C;
+}
+
+#colorDownRihgtCard {
+    background-color: #FF8989;
+}
+
+#colorDownCenter {
+    background-color: #F3393C;
+}
+
+#colorDownCenterCard {
+    background-color: #FF8989;
+}
+
+#colorUpCenter {
+    background-color: #D8850D;
+}
+
+#colorUpCenterCard {
+    background-color: #FAEBD6;
+
+}
+
+#colorDownLeft {
+    background-color: #BCBB09;
+}
+
+#colorDownLeftCard {
+    background-color: #EDF3B3;
+}
+
+#colorUpRighTriple {
+    background-color: #138EAF;
+}
+
+#colorUpRighTripleCard {
+    background-color: #ADE3EF;
+}
+
+#colorUpCenterTriple {
+    background-color: #8D8D8D;
+}
+
+#colorUpCenterTripleCard {
+    background-color: #E4E0DF;
+}
+
+#bgContainerFluid {
+    background-color: #1F9DC6;
+}

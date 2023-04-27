@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Document</title>
+
+</head>
+
+<body>
+    <!-- Start Kinerja Produksi -->
+    <div id="bg-contanerMain" class="container-fluid  py-3">
+        <div id="bg-containerInternal" class="container-fluid border">
+            <h2>
+                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="currentColor"
+                    class="bi bi-stopwatch" viewBox="0 0 17 17">
+                    <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z" />
+                    <path
+                        d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z" />
+                </svg>
+                Kinerja Produksi
+            </h2>
+
+            <div class=" row">
+                <div class="col-md-4">
+                    <div id="bg-containerInternal" class="container-fluid mt-4 border bg-light mb-4 ">
+
+                        <h3 class="text-center">Daily</h3>
+                        <div class="row">
+                            <div class="col-md-4 mt-2">
+                                <div id="colorUpRighTriple" class="card">
+                                    <div id="colorUpRighTripleCard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">1200 MWh</p>
+                                    </div>
+                                    <div id="colorUpRighTriple"
+                                        class="card-header text-center text-white font-weight-bold">
+                                        Unit
+                                        1</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mt-2">
+                                <div id="colorUpCenterTriple" class="card">
+                                    <div id="colorUpCenterTripleCard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">1230 MWh</p>
+                                    </div>
+                                    <div id="colorUpCenterTriple"
+                                        class="card-header text-center text-white font-weight-bold">
+                                        Unit 2</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mt-2">
+                                <div id="colorUpRighTriple" class="card">
+                                    <div id="colorUpRighTripleCard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">1024 MWh</p>
+                                    </div>
+                                    <div id="colorUpRighTriple"
+                                        class="card-header text-center text-white font-weight-bold ">
+                                        Unit 3</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 mt-2 mb-4">
+                                <div id="colorDownLeft" class="card">
+                                    <div id="colorDownLeftCard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">3454 MWh</p>
+                                    </div>
+                                    <div id="colorDownLeft"
+                                        class="card-header text-center text-white font-weight-bold  ">
+                                        Pencapaian</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="container-fluid  mt-4 border bg-light">
+                        <h3 class="text-center">Montly</h3>
+                        <div class="row">
+                            <div class="col-md-12 mt-2">
+                                <div id="colorUpCenter" class="card">
+                                    <div id="colorUpCenterCard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">103634 %</p>
+                                    </div>
+                                    <div id="colorUpCenter"
+                                        class="card-header text-center text-white font-weight-bold x ">
+                                        Unit 1
+                                        - 3</div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mt-2 mb-4">
+                                <div id="colorDownCenter" class="card">
+                                    <div id="colorDownCenterCard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">70 %</p>
+                                    </div>
+                                    <div id="colorDownCenter"
+                                        class="card-header text-center text-white font-weight-bold  ">
+                                        Pencapaian</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="container-fluid bg-light mt-4 border border">
+                        <h3 class="text-center">Yearly</h3>
+                        <div class="row">
+                            <div class="col-md-12 mt-2">
+                                <div id="colorUpRigt" class="card">
+                                    <div id="colorUpRigtcard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">1139974 %</p>
+                                    </div>
+                                    <div id="colorUpRigt" class="card-header text-center text-white font-weight-bold ">
+                                        Unit 1
+                                        - 3</div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mt-2 mb-4">
+                                <div id="colorDownCenter" class="card">
+                                    <div id="colorDownCenterCard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">73 %</p>
+                                    </div>
+                                    <div id="colorDownCenter"
+                                        class="card-header text-center text-white font-weight-bold  ">
+                                        Pencapaian</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="bgContainerFluid" class=" text-center text-white font-weight-bold">
+            <p>Detail Produksi</p>
+        </footer>
+    </div>
+    <!-- End Kinerja Produksi -->
+
+
+    <!-- Start Kinerja Operasi -->
+    <div id="bg-contanerMain" class="container-fluid  py-3">
+        <div id="bg-containerInternal" class="container-fluid border border-light  border border-light">
+            <h2>
+                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="currentColor"
+                    class="bi bi-stopwatch" viewBox="0 0 17 17">
+                    <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z" />
+                    <path
+                        d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z" />
+                </svg>
+                Kinerja Operasi
+            </h2>
+            <div class=" row">
+                <div class="col-md-4">
+                    <div id="bg-containerInternal" class="container-fluid mt-4 border bg-light mb-4  ">
+                        <h3 class="text-center">Daily</h3>
+                        <div class="row">
+                            <div class="col-md-6 mt-2">
+                                <div id="colorUpRighTriple" class="card">
+                                    <div id="colorUpRighTripleCard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">1 %</p>
+                                    </div>
+                                    <div id="colorUpRighTriple"
+                                        class="card-header text-center text-white font-weight-bold">
+                                        Unit
+                                        1</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-2">
+                                <div id="colorUpCenterTriple" class="card">
+                                    <div id="colorUpCenterTripleCard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">2 %</p>
+                                    </div>
+                                    <div id="colorUpCenterTriple"
+                                        class="card-header text-center text-white font-weight-bold">
+                                        Unit 2</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 mt-2 mb-4">
+                                <div id="colorDownLeft" class="card">
+                                    <div id="colorDownLeftCard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">3 %</p>
+                                    </div>
+                                    <div id="colorDownLeft"
+                                        class="card-header text-center text-white font-weight-bold  ">
+                                        Total</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="container-fluid bg-light mt-4 border bg-light">
+                        <h3 class="text-center">Montly</h3>
+                        <div class="row">
+                            <div class="col-md-12 mt-2">
+                                <div id="colorUpCenter" class="card">
+                                    <div id="colorUpCenterCard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">75 %</p>
+                                    </div>
+                                    <div id="colorUpCenter"
+                                        class="card-header text-center text-white font-weight-bold x ">
+                                        Unit 1
+                                        - 2</div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mt-2 mb-4">
+                                <div id="colorDownCenter" class="card">
+                                    <div id="colorDownCenterCard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">75 %</p>
+                                    </div>
+                                    <div id="colorDownCenter"
+                                        class="card-header text-center text-white font-weight-bold  ">
+                                        Total</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="container-fluid bg-light mt-4 border bg-light">
+                        <h3 class="text-center">Yearly</h3>
+                        <div class="row">
+                            <div class="col-md-12 mt-2">
+                                <div id="colorUpRigt" class="card">
+                                    <div id="colorUpRigtcard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">77 %</p>
+                                    </div>
+                                    <div id="colorUpRigt" class="card-header text-center text-white font-weight-bold ">
+                                        Unit 1
+                                        - 2</div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mt-2 mb-4">
+                                <div id="colorDownCenter" class="card">
+                                    <div id="colorDownCenterCard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">77 %</p>
+                                    </div>
+                                    <div id="colorDownCenter"
+                                        class="card-header text-center text-white font-weight-bold  ">
+                                        Total</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="bgContainerFluid" class=" text-center text-white font-weight-bold">
+            <p>Detail Operasi</p>
+        </footer>
+    </div>
+    <!-- End Kinerja Operasi -->
+
+    <!-- Start Kinerja Kondisi Hidrologi(Discharge) -->
+    <div id="bg-contanerMain" class="container-fluid  py-3">
+        <div id="bg-containerInternal" class="container-fluid border border-light  border border-light">
+            <h2>
+                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="currentColor" class="bi bi-shuffle"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M0 3.5A.5.5 0 0 1 .5 3H1c2.202 0 3.827 1.24 4.874 2.418.49.552.865 1.102 1.126 1.532.26-.43.636-.98 1.126-1.532C9.173 4.24 10.798 3 13 3v1c-1.798 0-3.173 1.01-4.126 2.082A9.624 9.624 0 0 0 7.556 8a9.624 9.624 0 0 0 1.317 1.918C9.828 10.99 11.204 12 13 12v1c-2.202 0-3.827-1.24-4.874-2.418A10.595 10.595 0 0 1 7 9.05c-.26.43-.636.98-1.126 1.532C4.827 11.76 3.202 13 1 13H.5a.5.5 0 0 1 0-1H1c1.798 0 3.173-1.01 4.126-2.082A9.624 9.624 0 0 0 6.444 8a9.624 9.624 0 0 0-1.317-1.918C4.172 5.01 2.796 4 1 4H.5a.5.5 0 0 1-.5-.5z" />
+                    <path
+                        d="M13 5.466V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192zm0 9v-3.932a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192z" />
+                </svg>
+                Kondisi Hidrologi(Discharge)
+            </h2>
+
+            <div class=" row">
+                <div class="col-md-4">
+                    <div id="bg-containerInternal" class="container-fluid mt-4 border bg-light mb-4  ">
+                        <h3 class="text-center">Daily</h3>
+                        <div class="row">
+                            <div class="col-md-6 mt-2">
+                                <div id="colorUpRighTriple" class="card">
+                                    <div id="colorUpRighTripleCard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">55.00 m3/s</p>
+                                    </div>
+                                    <div id="colorUpRighTriple"
+                                        class="card-header text-center text-white font-weight-bold">
+                                        Rata - Rata unit
+                                        1</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-2">
+                                <div id="colorUpCenterTriple" class="card">
+                                    <div id="colorUpCenterTripleCard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">56.00 m3/s</p>
+                                    </div>
+                                    <div id="colorUpCenterTriple"
+                                        class="card-header text-center text-white font-weight-bold">
+                                        Rata - Rata unit 2</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 mt-2 mb-4">
+                                <div id="colorDownLeft" class="card">
+                                    <div id="colorDownLeftCard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">55.5 m3/s</p>
+                                    </div>
+                                    <div id="colorDownLeft"
+                                        class="card-header text-center text-white font-weight-bold  ">
+                                        Total rata- rata</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="container-fluid bg-light mt-4 border bg-light">
+                        <h3 class="text-center">Montly</h3>
+                        <div class="row">
+                            <div class="col-md-6 mt-2">
+                                <div id="colorUpCenter" class="card">
+                                    <div id="colorUpCenterCard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">45.46 m3/s</p>
+                                    </div>
+                                    <div id="colorUpCenter"
+                                        class="card-header text-center text-white font-weight-bold x ">
+                                        Rata - Rata unit 1</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-2 ">
+                                <div id="colorUpCenterTriple" class="card">
+                                    <div id="colorUpCenterTripleCard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">51.32 m3/s</p>
+                                    </div>
+                                    <div id="colorUpCenterTriple"
+                                        class="card-header text-center text-white font-weight-bold  ">
+                                        Rata - Rata unit 2</div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 mt-2 mb-4">
+                                <div id="colorDownCenter" class="card">
+                                    <div id="colorDownCenterCard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">48.39 m3/s</p>
+                                    </div>
+                                    <div id="colorDownCenter"
+                                        class="card-header text-center text-white font-weight-bold  ">
+                                        Total rata- rata</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="container-fluid bg-light mt-4 border bg-light">
+                        <h3 class="text-center">Yearly</h3>
+                        <div class="row">
+                            <div class="col-md-6 mt-2">
+                                <div id="colorUpRigt" class="card">
+                                    <div id="colorUpRigtcard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">58.76 m3/s</p>
+                                    </div>
+                                    <div id="colorUpRigt"
+                                        class="card-header text-center text-white font-weight-bold x ">
+                                        Rata - Rata unit 1</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-2 ">
+                                <div id="colorUpCenterTriple" class="card">
+                                    <div id="colorUpCenterTripleCard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">60.85 m3/s</p>
+                                    </div>
+                                    <div id="colorUpCenterTriple"
+                                        class="card-header text-center text-white font-weight-bold  ">
+                                        Rata - Rata unit 2</div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 mt-2 mb-4">
+                                <div id="colorDownCenter" class="card">
+                                    <div id="colorDownCenterCard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">59.805 m3/s</p>
+                                    </div>
+                                    <div id="colorDownCenter"
+                                        class="card-header text-center text-white font-weight-bold  ">
+                                        Total rata- rata</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="bgContainerFluid" class=" text-center text-white font-weight-bold">
+            <p> Detail Kondisi Hidrologi(Discharge)</p>
+        </footer>
+    </div>
+    <!-- End Kinerja Kondisi Hidrologi(Discharge) -->
+
+
+    <!-- Start Detail Kondisi Hidrologi(Water Level) -->
+    <div id="bg-contanerMain" class="container-fluid  py-3">
+        <div id="bg-containerInternal" class="container-fluid border border-light  border border-light">
+            <h2>
+                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="currentColor" class="bi bi-shuffle"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M0 3.5A.5.5 0 0 1 .5 3H1c2.202 0 3.827 1.24 4.874 2.418.49.552.865 1.102 1.126 1.532.26-.43.636-.98 1.126-1.532C9.173 4.24 10.798 3 13 3v1c-1.798 0-3.173 1.01-4.126 2.082A9.624 9.624 0 0 0 7.556 8a9.624 9.624 0 0 0 1.317 1.918C9.828 10.99 11.204 12 13 12v1c-2.202 0-3.827-1.24-4.874-2.418A10.595 10.595 0 0 1 7 9.05c-.26.43-.636.98-1.126 1.532C4.827 11.76 3.202 13 1 13H.5a.5.5 0 0 1 0-1H1c1.798 0 3.173-1.01 4.126-2.082A9.624 9.624 0 0 0 6.444 8a9.624 9.624 0 0 0-1.317-1.918C4.172 5.01 2.796 4 1 4H.5a.5.5 0 0 1-.5-.5z" />
+                    <path
+                        d="M13 5.466V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192zm0 9v-3.932a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192z" />
+                </svg>
+                Kondisi Hidrologi(Water Level)
+            </h2>
+
+            <div class=" row">
+                <div class="col-md-4">
+                    <div id="bg-containerInternal" class="container-fluid mt-4 border bg-light mb-4  ">
+                        <h3 class="text-center">Daily</h3>
+                        <div class="row">
+                            <div class="col-md-12 mt-2 mb-4">
+                                <div id="colorUpRighTriple" class="card">
+                                    <div id="colorUpRighTripleCard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">903.50 m</p>
+                                    </div>
+                                    <div id="colorUpRighTriple"
+                                        class="card-header text-center text-white font-weight-bold">
+                                        Level</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="container-fluid bg-light mt-4 border bg-light">
+                        <h3 class="text-center">Montly</h3>
+                        <div class="row">
+                            <div class="col-md-12 mt-2 mb-4">
+                                <div id="colorUpCenter" class="card">
+                                    <div id="colorUpCenterCard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">905.43 m</p>
+                                    </div>
+                                    <div id="colorUpCenter"
+                                        class="card-header text-center text-white font-weight-bold x ">
+                                        Level</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="container-fluid bg-light mt-4 border bg-light">
+                        <h3 class="text-center">Yearly</h3>
+                        <div class="row">
+                            <div class="col-md-12 mt-2 mb-4">
+                                <div id="colorUpRigt" class="card">
+                                    <div id="colorUpRigtcard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">903.9 m</p>
+                                    </div>
+                                    <div id="colorUpRigt"
+                                        class="card-header text-center text-white font-weight-bold x ">
+                                        Level</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="bgContainerFluid" class=" text-center text-white font-weight-bold">
+            <p> Detail Kondisi Hidrologi(Water Level)</p>
+        </footer>
+    </div>
+    <!-- End Detail Kondisi Hidrologi(Water Level) -->
+
+    <!-- start Pemeliharaan Sungai -->
+    <div id="bg-contanerMain" class="container-fluid  py-3">
+        <div id="bg-containerInternal" class="container-fluid border border-light  border border-light ">
+            <h2 class="mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="currentColor" class="bi bi-shuffle"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M0 3.5A.5.5 0 0 1 .5 3H1c2.202 0 3.827 1.24 4.874 2.418.49.552.865 1.102 1.126 1.532.26-.43.636-.98 1.126-1.532C9.173 4.24 10.798 3 13 3v1c-1.798 0-3.173 1.01-4.126 2.082A9.624 9.624 0 0 0 7.556 8a9.624 9.624 0 0 0 1.317 1.918C9.828 10.99 11.204 12 13 12v1c-2.202 0-3.827-1.24-4.874-2.418A10.595 10.595 0 0 1 7 9.05c-.26.43-.636.98-1.126 1.532C4.827 11.76 3.202 13 1 13H.5a.5.5 0 0 1 0-1H1c1.798 0 3.173-1.01 4.126-2.082A9.624 9.624 0 0 0 6.444 8a9.624 9.624 0 0 0-1.317-1.918C4.172 5.01 2.796 4 1 4H.5a.5.5 0 0 1-.5-.5z" />
+                    <path
+                        d="M13 5.466V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192zm0 9v-3.932a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192z" />
+                </svg>
+                Pemeliharaan Sungai
+            </h2>
+            <div class=" row">
+                <div class="col-md-3">
+                    <h3 class="text-center">Trashboom 1</h3>
+                    <div id="bg-containerInternal" class="container-fluid bg-light mt-2 border bg-light  ">
+                        <h3 class="text-center">Plastik</h3>
+                        <div class="row">
+                            <div class="col-md-6 mt-2 mb-2">
+                                <div id="colorUpRighTriple" class="card">
+                                    <div id="colorUpRighTripleCard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">2 m3</p>
+                                    </div>
+                                    <div id="colorUpRighTriple"
+                                        class="card-header text-center text-white font-weight-bold">
+                                        Volume
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-2 mb-2">
+                                <div id="colorUpCenterTriple" class="card">
+                                    <div id="colorUpCenterTripleCard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">76 %</p>
+                                    </div>
+                                    <div id="colorUpCenterTriple"
+                                        class="card-header text-center text-white font-weight-bold">
+                                        Pencapaian</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="text-center">Eceng Gondok</h3>
+                        <div class="row">
+                            <div class="col-md-6 mt-2 mb-2">
+                                <div id="colorUpCenter" class="card">
+                                    <div id="colorUpCenterCard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">2 m3</p>
+                                    </div>
+                                    <div id="colorUpCenter" class="card-header text-center text-white font-weight-bold">
+                                        Volume
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-2 mb-2">
+                                <div id="colorUpCenterTriple" class="card">
+                                    <div id="colorUpCenterTripleCard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">34 %</p>
+                                    </div>
+                                    <div id="colorUpCenterTriple"
+                                        class="card-header text-center text-white font-weight-bold">
+                                        Pencapaian</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="text-center">Lain - lain</h3>
+                        <div class="row">
+                            <div class="col-md-6 mt-2 mb-4">
+                                <div id="colorUpRigt" class="card">
+                                    <div id="colorUpRigtcard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">3 m3</p>
+                                    </div>
+                                    <div id="colorUpRigt" class="card-header text-center text-white font-weight-bold">
+                                        Volume
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-2 mb-4 ">
+                                <div id="colorUpCenterTriple" class="card">
+                                    <div id="colorUpCenterTripleCard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">56 %</p>
+                                    </div>
+                                    <div id="colorUpCenterTriple"
+                                        class="card-header text-center text-white font-weight-bold">
+                                        Pencapaian</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3">
+                    <h3 class="text-center">Trashboom 1</h3>
+                    <div id="bg-containerInternal" class="container-fluid bg-light mt-2 border bg-light  ">
+                        <h3 class="text-center">Plastik</h3>
+                        <div class="row">
+                            <div class="col-md-6 mt-2 mb-2">
+                                <div id="colorUpRighTriple" class="card">
+                                    <div id="colorUpRighTripleCard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">16 m3</p>
+                                    </div>
+                                    <div id="colorUpRighTriple"
+                                        class="card-header text-center text-white font-weight-bold">
+                                        Volume
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-2 mb-2">
+                                <div id="colorUpCenterTriple" class="card">
+                                    <div id="colorUpCenterTripleCard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">90 %</p>
+                                    </div>
+                                    <div id="colorUpCenterTriple"
+                                        class="card-header text-center text-white font-weight-bold">
+                                        Pencapaian</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="text-center">Eceng Gondok</h3>
+                        <div class="row">
+                            <div class="col-md-6 mt-2 mb-2">
+                                <div id="colorUpCenter" class="card">
+                                    <div id="colorUpCenterCard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">10 m3</p>
+                                    </div>
+                                    <div id="colorUpCenter" class="card-header text-center text-white font-weight-bold">
+                                        Volume
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-2 mb-2">
+                                <div id="colorUpCenterTriple" class="card">
+                                    <div id="colorUpCenterTripleCard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">50 %</p>
+                                    </div>
+                                    <div id="colorUpCenterTriple"
+                                        class="card-header text-center text-white font-weight-bold">
+                                        Pencapaian</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="text-center">Lain - lain</h3>
+                        <div class="row">
+                            <div class="col-md-6 mt-2 mb-4">
+                                <div id="colorUpRigt" class="card">
+                                    <div id="colorUpRigtcard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">1 m3</p>
+                                    </div>
+                                    <div id="colorUpRigt" class="card-header text-center text-white font-weight-bold">
+                                        Volume
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-2 mb-4 ">
+                                <div id="colorUpCenterTriple" class="card">
+                                    <div id="colorUpCenterTripleCard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">3 %</p>
+                                    </div>
+                                    <div id="colorUpCenterTriple"
+                                        class="card-header text-center text-white font-weight-bold">
+                                        Pencapaian</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3">
+                    <h3 class="text-center">Intake Rack</h3>
+                    <div id="bg-containerInternal" class="container-fluid bg-light mt-2 border bg-light  ">
+                        <h3 class="text-center">Plastik</h3>
+                        <div class="row">
+                            <div class="col-md-6 mt-2 mb-2">
+                                <div id="colorUpRighTriple" class="card">
+                                    <div id="colorUpRighTripleCard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">1 m3</p>
+                                    </div>
+                                    <div id="colorUpRighTriple"
+                                        class="card-header text-center text-white font-weight-bold">
+                                        Volume
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-2 mb-2">
+                                <div id="colorUpCenterTriple" class="card">
+                                    <div id="colorUpCenterTripleCard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">45 %</p>
+                                    </div>
+                                    <div id="colorUpCenterTriple"
+                                        class="card-header text-center text-white font-weight-bold">
+                                        Pencapaian</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="text-center">Eceng Gondok</h3>
+                        <div class="row">
+                            <div class="col-md-6 mt-2 mb-2">
+                                <div id="colorUpCenter" class="card">
+                                    <div id="colorUpCenterCard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">1 m3</p>
+                                    </div>
+                                    <div id="colorUpCenter" class="card-header text-center text-white font-weight-bold">
+                                        Volume
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-2 mb-2">
+                                <div id="colorUpCenterTriple" class="card">
+                                    <div id="colorUpCenterTripleCard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">45 %</p>
+                                    </div>
+                                    <div id="colorUpCenterTriple"
+                                        class="card-header text-center text-white font-weight-bold">
+                                        Pencapaian</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="text-center">Lain - lain</h3>
+                        <div class="row">
+                            <div class="col-md-6 mt-2 mb-4">
+                                <div id="colorUpRigt" class="card">
+                                    <div id="colorUpRigtcard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">2 m3</p>
+                                    </div>
+                                    <div id="colorUpRigt" class="card-header text-center text-white font-weight-bold">
+                                        Volume
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-2 mb-4 ">
+                                <div id="colorUpCenterTriple" class="card">
+                                    <div id="colorUpCenterTripleCard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">75 %</p>
+                                    </div>
+                                    <div id="colorUpCenterTriple"
+                                        class="card-header text-center text-white font-weight-bold">
+                                        Pencapaian</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3">
+                    <h3 class="text-center">Spiral Case 1</h3>
+                    <div id="bg-containerInternal" class="container-fluid bg-light mt-2 border bg-light mb-4  ">
+                        <h3 class="text-center">Plastik</h3>
+                        <div class="row">
+                            <div class="col-md-6 mt-2 mb-2">
+                                <div id="colorUpRighTriple" class="card">
+                                    <div id="colorUpRighTripleCard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">0 m3</p>
+                                    </div>
+                                    <div id="colorUpRighTriple"
+                                        class="card-header text-center text-white font-weight-bold">
+                                        Volume
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-2 mb-2">
+                                <div id="colorUpCenterTriple" class="card ">
+                                    <div id="colorUpCenterTripleCard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">0 %</p>
+                                    </div>
+                                    <div id="colorUpCenterTriple"
+                                        class="card-header text-center text-white font-weight-bold">
+                                        Pencapaian</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="text-center">Eceng Gondok</h3>
+                        <div class="row">
+                            <div class="col-md-6 mt-2 mb-2">
+                                <div id="colorUpCenter" class="card">
+                                    <div id="colorUpCenterCard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">5 m3</p>
+                                    </div>
+                                    <div id="colorUpCenter" class="card-header text-center text-white font-weight-bold">
+                                        Volume
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-2 mb-2">
+                                <div id="colorUpCenterTriple" class="card">
+                                    <div id="colorUpCenterTripleCard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">84 %</p>
+                                    </div>
+                                    <div id="colorUpCenterTriple"
+                                        class="card-header text-center text-white font-weight-bold">
+                                        Pencapaian</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="text-center">Lain - lain</h3>
+                        <div class="row">
+                            <div class="col-md-6 mt-2 mb-4">
+                                <div id="colorUpRigt" class="card">
+                                    <div id="colorUpRigtcard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">0 m3</p>
+                                    </div>
+                                    <div id="colorUpRigt" class="card-header text-center text-white font-weight-bold">
+                                        Volume
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-2 mb-4 ">
+                                <div id="colorUpCenterTriple" class="card">
+                                    <div id="colorUpCenterTripleCard" class="card-body">
+                                        <p class="card-text text-center font-weight-bold">0 %</p>
+                                    </div>
+                                    <div id="colorUpCenterTriple"
+                                        class="card-header text-center text-white font-weight-bold">
+                                        Pencapaian</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="bgContainerFluid" class=" text-center text-white font-weight-bold">
+            <p> Detail Pemeliharaan Sungai</p>
+        </footer>
+    </div>
+    <!-- End Pemeliharaan Sungai -->
+</body>
+
+</html>
